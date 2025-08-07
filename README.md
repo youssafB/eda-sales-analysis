@@ -17,6 +17,7 @@ Gain an initial understanding of overall business performance by calculating key
 > 📌 This overview is generated using a single SQL query that combines multiple aggregation functions with `UNION ALL`.  
 > You can view the full SQL query [here](scripts/1_Business_metrics).
 
+---
 
 # 🛍️ Customer Segmentation with RFM Analysis
 
