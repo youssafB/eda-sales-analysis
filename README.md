@@ -19,6 +19,22 @@ Gain an initial understanding of overall business performance by calculating key
 
 ---
 
+
+Total sales by category
+2.	What is the total revenue generated  by each category ?
+
+
+🟢 Finding:
+
+- **Bikes = 96%+** of total revenue  
+- Driven by high unit price, not volume  
+
+> ⚠️ **Risk**: Heavy reliance on a single category increases business vulnerability.
+
+
+
+---
+
 # 🛍️ Customer Segmentation with RFM Analysis
 
 - This project applies **RFM analysis** (Recency, Frequency, Monetary) to segment customers based on their purchasing behavior. 
