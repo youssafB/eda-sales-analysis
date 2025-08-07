@@ -20,23 +20,23 @@ Gain an initial understanding of overall business performance by calculating key
 ---
 
 
-### Total sales by category
-1.	What is the total revenue generated  by each category ?
+## 🔹Total sales by category
+Question: What is the total revenue generated  by each category ?
 
-🟢 Finding:
+### 🧠 Key Insights:
 - **Bikes = 96%+** of total revenue  
 - Driven by high unit price, not volume  
 > ⚠️ **Risk**: Heavy reliance on a single category increases business vulnerability.
 
-### 🔹Sales Volume & Profit by Category
+## 🔹Sales Volume & Profit by Category
 Question: How do sales volume and profitability compare across categories?
 
-## 🧠 Key Insights:
+### 🧠 Key Insights:
 - Accessories make up 60% of units sold but contribute very little to profit
 - Bikes account for only 25% of units sold yet generate over 96% of profit
 - Clothing has low volume and low profit contribution
 
-## ✅ Actions:
+### ✅ Actions:
 - Diversify revenue across categories  
 - Improve accessory margins or bundle strategically  
 - Reassess clothing strategy 
