@@ -18,15 +18,23 @@ Gain an initial understanding of overall business performance by calculating key
 > You can view the full SQL query [here](scripts/1_Business_metrics).
 
 
-## 2. Customers segmentation:
-
-
 # 🛍️ Customer Segmentation with RFM Analysis
 
 - This project applies **RFM analysis** (Recency, Frequency, Monetary) to segment customers based on their purchasing behavior. 
 - It's designed to help businesses understand **customer value** and **target segments more effectively**.
 
-## 🧠 Segmentation Logic
+
+### 🧠 Key Insights
+
+- 33% of customers belong to high-value segments (Loyal Customers, Champions, Big Spenders) — ideal for loyalty, upselling, and personalized retention strategies.
+
+- 13% are At Risk — showing declining engagement. Timely reactivation campaigns can recover this group before churn. 
+
+- 11% are Lost Customers — historically engaged but now inactive. A smaller portion may respond to reactivation, but most indicate churned revenue.
+
+- 7% are New or Potential Loyalists — early in their journey, strong candidates for lifecycle marketing to increase retention.
+
+### 🧠 Segmentation Logic
 
 - Customers are scored from 1 to 5 on Recency, Frequency, and Monetary metrics based on their relative rankings. 
 - Using these RFM scores, customers are grouped into 8 key segments :
@@ -46,15 +54,7 @@ Gain an initial understanding of overall business performance by calculating key
  - **Key SQL concepts used:** `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, and `GROUP BY`
  - For more details, see the [customers_segementation.](scripts/3_customers_segementation.sql).
 
-### 🧠 Key Insights
 
-- 33% of customers belong to high-value segments (Loyal Customers, Champions, Big Spenders) — ideal for loyalty, upselling, and personalized retention strategies.
-
-- 13% are At Risk — showing declining engagement. Timely reactivation campaigns can recover this group before churn. 
-
-- 11% are Lost Customers — historically engaged but now inactive. A smaller portion may respond to reactivation, but most indicate churned revenue.
-
-- 7% are New or Potential Loyalists — early in their journey, strong candidates for lifecycle marketing to increase retention.
 ---
 
 
