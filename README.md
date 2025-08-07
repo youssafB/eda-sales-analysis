@@ -55,4 +55,6 @@ Using RFM scores, customers are grouped into 8 key segments:
 ---
 
 ✅ Use this segmentation to tailor marketing strategies and improve customer retention.
+Key SQL Features:
+    - `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, `GROUP BY`
 
