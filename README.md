@@ -15,4 +15,4 @@ Gain an initial understanding of overall business performance by calculating key
 | 29,356,250      | 60,423             | 486                | 27,659                | 295                     | 18,484                   |
 
 > 📌 This overview is generated using a single SQL query that combines multiple aggregation functions with `UNION ALL`.  
-> You can view the full SQL query [here](./sql/high_level_metrics.sql).
+> You can view the full SQL query [here](.scripts/1_metrics_overveiw.sql).
