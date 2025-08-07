@@ -47,9 +47,16 @@ Gain an initial understanding of overall business performance by calculating key
  - For more details, see the [customers_segementation.](scripts/3_customers_segementation.sql).
 
 ### 🧠 Key Insights
-- 33% of customers are high-value segments (Loyal Customers, Champions, Big Spenders) — ideal targets for retention, upselling, and loyalty initiatives.
-- 13% fall into the At Risk category — recent drop in engagement, representing a key reactivation opportunity through targeted win-back campaigns.
-- 7% are new or potential loyalists — early-stage customers with strong conversion potential if guided through proper onboarding and engagement flows.
+
+### 🧠 Key Insights
+
+- 33% of customers belong to high-value segments (Loyal Customers, Champions, Big Spenders) — ideal for loyalty, upselling, and personalized retention strategies.
+
+- 13% are At Risk — showing declining engagement. Timely reactivation campaigns can recover this group before churn.- 
+
+- 11% are Lost Customers — historically engaged but now inactive. A smaller portion may respond to reactivation, but most indicate churned revenue.
+
+- 7% are New or Potential Loyalists — early in their journey, strong candidates for lifecycle marketing to increase retention.
 ---
 
 
