@@ -45,6 +45,13 @@ Gain an initial understanding of overall business performance by calculating key
  
  - **Key SQL concepts used:** `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, and `GROUP BY`
  - For more details, see the [customers_segementation.](scripts/3_customers_segementation.sql).
+
+###🧠 Key Insights
+33% of customers are high-value segments (Loyal Customers, Champions, Big Spenders) — ideal targets for retention, upselling, and loyalty initiatives.
+
+13% fall into the At Risk category — recent drop in engagement, representing a key reactivation opportunity through targeted win-back campaigns.
+
+7% are new or potential loyalists — early-stage customers with strong conversion potential if guided through proper onboarding and engagement flows.
 ---
-✅ 
+
 
