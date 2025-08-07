@@ -19,3 +19,40 @@ Gain an initial understanding of overall business performance by calculating key
 
 
 ## 2. Customers segmentation:
+
+
+# 🛍️ Customer Segmentation with RFM Analysis
+
+This project applies **RFM analysis** (Recency, Frequency, Monetary) to segment customers based on their purchasing behavior. It's designed to help businesses understand **customer value** and **target segments more effectively**.
+
+---
+
+## 🔍 RFM Scoring
+
+Each customer is scored from **1 to 5** based on:
+
+- **Recency**: How recently they made a purchase  
+- **Frequency**: How often they make purchases  
+- **Monetary**: How much money they spend  
+
+---
+
+## 🧠 Segmentation Logic
+
+Using RFM scores, customers are grouped into 8 key segments:
+
+| Segment Name             | Rule Logic           | Description                                   |
+|--------------------------|----------------------|-----------------------------------------------|
+| 🏆 **Champions**          | R ≥ 4, F ≥ 4, M ≥ 4   | Best customers: buy often, spend a lot        |
+| ✨ **Loyal Customers**    | R ≥ 4, F ≥ 3          | Frequent buyers                               |
+| 🆕 **New Customers**      | R = 5, F = 1          | Just joined                                   |
+| 💰 **Big Spenders**       | R ≥ 3, M ≥ 4          | Spend a lot, may not buy frequently           |
+| ⏳ **At Risk**            | R ≤ 2, F ≥ 4          | Used to buy a lot, now quiet                  |
+| ❌ **Lost Customers**     | R ≤ 2, F ≤ 2, M ≤ 2   | Likely lost                                   |
+| 📈 **Potential Loyalists**| F ≥ 4, M ≤ 3          | Buy often, could spend more                   |
+| 🧊 **Others**             | -                    | Don’t fit into other segments                 |
+
+---
+
+✅ Use this segmentation to tailor marketing strategies and improve customer retention.
+
