@@ -28,12 +28,6 @@ Key SQL Features:
 
 =============================================================================== -->
 
-
-
-
-  
-
-
 -- Step 1: Create a view to calculate basic RFM metrics for each customer
 CREATE VIEW vw_rfm_base AS
 SELECT
