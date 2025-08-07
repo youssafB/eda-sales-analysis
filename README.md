@@ -44,7 +44,7 @@ Gain an initial understanding of overall business performance by calculating key
 | 🧊 **Others**             | -                    | Don’t fit into other segments                 |
  
  - **Key SQL concepts used:** `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, and `GROUP BY`
- - For more details, see the [SQL documentation](scripts/3_customers_segementation.sql).
+ - For more details, see the [customers_segementation.](scripts/3_customers_segementation.sql).
 ---
 ✅ 
 
