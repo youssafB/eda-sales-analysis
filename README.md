@@ -23,19 +23,8 @@ Gain an initial understanding of overall business performance by calculating key
 
 # 🛍️ Customer Segmentation with RFM Analysis
 
-This project applies **RFM analysis** (Recency, Frequency, Monetary) to segment customers based on their purchasing behavior. It's designed to help businesses understand **customer value** and **target segments more effectively**.
-
----
-
-## 🔍 RFM Scoring
-
-Each customer is scored from **1 to 5** based on:
-
-- **Recency**: How recently they made a purchase  
-- **Frequency**: How often they make purchases  
-- **Monetary**: How much money they spend  
-
----
+- This project applies **RFM analysis** (Recency, Frequency, Monetary) to segment customers based on their purchasing behavior. 
+- It's designed to help businesses understand **customer value** and **target segments more effectively**.
 
 ## 🧠 Segmentation Logic
 
@@ -53,10 +42,8 @@ Each customer is scored from **1 to 5** based on:
 | ❌ **Lost Customers**     | R ≤ 2, F ≤ 2, M ≤ 2   | Likely lost                                   |
 | 📈 **Potential Loyalists**| F ≥ 4, M ≤ 3          | Buy often, could spend more                   |
 | 🧊 **Others**             | -                    | Don’t fit into other segments                 |
-
+ 
+ - `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, `GROUP BY`
 ---
-
-✅ Use this segmentation to tailor marketing strategies and improve customer retention.
-Key SQL Features:
-    - `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, `GROUP BY`
+✅ 
 
