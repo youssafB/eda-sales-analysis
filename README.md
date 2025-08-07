@@ -43,7 +43,8 @@ Gain an initial understanding of overall business performance by calculating key
 | 📈 **Potential Loyalists**| F ≥ 4, M ≤ 3          | Buy often, could spend more                   |
 | 🧊 **Others**             | -                    | Don’t fit into other segments                 |
  
- - `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, `GROUP BY`
+ - **Key SQL concepts used:** `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, and `GROUP BY`
+ - For more details, see the [SQL documentation](scripts/3_customers_segementation.sql).
 ---
 ✅ 
 
