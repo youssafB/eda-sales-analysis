@@ -39,7 +39,9 @@ Each customer is scored from **1 to 5** based on:
 
 ## 🧠 Segmentation Logic
 
-Using RFM scores, customers are grouped into 8 key segments:
+- Customers are scored from 1 to 5 on Recency, Frequency, and Monetary metrics based on their relative rankings. 
+- Using these RFM scores, customers are grouped into 8 key segments :
+
 
 | Segment Name             | Rule Logic           | Description                                   |
 |--------------------------|----------------------|-----------------------------------------------|
