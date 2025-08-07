@@ -27,13 +27,13 @@ Gain an initial understanding of overall business performance by calculating key
 
 ### 🧠 Key Insights
 
-- 33% of customers belong to high-value segments (Loyal Customers, Champions, Big Spenders) — ideal for loyalty, upselling, and personalized retention strategies.
+>- 33% of customers belong to high-value segments (Loyal Customers, Champions, Big Spenders) — ideal for loyalty, upselling, and personalized retention strategies.
 
-- 13% are At Risk — showing declining engagement. Timely reactivation campaigns can recover this group before churn. 
+>- 13% are At Risk — showing declining engagement. Timely reactivation campaigns can recover this group before churn. 
 
-- 11% are Lost Customers — historically engaged but now inactive. A smaller portion may respond to reactivation, but most indicate churned revenue.
+>- 11% are Lost Customers — historically engaged but now inactive. A smaller portion may respond to reactivation, but most indicate churned revenue.
 
-- 7% are New or Potential Loyalists — early in their journey, strong candidates for lifecycle marketing to increase retention.
+>- 7% are New or Potential Loyalists — early in their journey, strong candidates for lifecycle marketing to increase retention.
 
 ### 🧠 Segmentation Logic
 
