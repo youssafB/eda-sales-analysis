@@ -1,3 +1,17 @@
 # eda-sales-analysis
-1.	High-Level Metrics Overview
-Initial understanding of overall business performance by calculating high-level key metrics for sales, volume, pricing, and customer activity.
+## 📊 High-Level Metrics Overview
+
+Gain an initial understanding of overall business performance by calculating key high-level metrics for:
+
+- **Sales**
+- **Volume**
+- **Pricing**
+- **Customer Activity**
+
+### 🧮 Summary Table
+
+| **Total Sales** | **Total Quantity** | **Average Price** | **Total Nr. Orders** | **Total Nr. Products** | **Total Nr. Customers** |
+|-----------------|--------------------|--------------------|-----------------------|-------------------------|--------------------------|
+| 29,356,250      | 60,423             | 486                | 27,659                | 295                     | 18,484                   |
+
+> 📌 This overview is generated using a single SQL query that combines multiple aggregation functions with `UNION ALL` for efficiency and simplicity.
