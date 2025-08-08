@@ -1,0 +1,48 @@
+-- ==============================================================
+-- View: category_summary
+-- Purpose:
+--   Combines item counts and profit per category
+--   Calculates both absolute values and percentages
+-- ==============================================================
+
+CREATE VIEW category_summary AS
+
+-- --------------------------------------------------------------
+-- Step 1: Aggregate item counts and profit per category
+-- --------------------------------------------------------------
+WITH category_stats AS (
+    SELECT
+        B.category,  -- Product category name
+        COUNT(A.product_key) AS number_of_items,  -- Total items sold in this category
+        SUM(A.sales_amount - (B.cost * A.quantity)) AS total_profit  -- Profit calculation
+        --   sales_amount: revenue from the sale
+        --   cost * quantity: total cost of goods sold
+        --   sales_amount - (cost * quantity) = profit
+    FROM fact_sales A
+    LEFT JOIN dim_products B 
+        ON A.product_key = B.product_key  -- Match each sale with product details
+    GROUP BY B.category
+),
+
+-- --------------------------------------------------------------
+-- Step 2: Calculate totals across all categories
+-- --------------------------------------------------------------
+totals AS (
+    SELECT
+        SUM(number_of_items) AS total_items_all,  -- Sum of all items sold
+        SUM(total_profit) AS total_profit_all     -- Sum of all profit
+    FROM category_stats
+)
+
+-- --------------------------------------------------------------
+-- Step 3: Calculate percentages and return final result
+-- --------------------------------------------------------------
+SELECT
+    cs.category,  -- Category name
+    cs.number_of_items,  -- Total items sold in this category
+    ROUND(100.0 * cs.number_of_items / t.total_items_all, 2) AS item_percentage,  -- Share of total items
+    cs.total_profit,  -- Total profit for this category
+    ROUND(100.0 * cs.total_profit / t.total_profit_all, 2) AS profit_percentage  -- Share of total profit
+FROM category_stats cs
+CROSS JOIN totals t  -- Join to totals so we can calculate percentages
+ORDER BY cs.number_of_items DESC;  -- Order by items sold (highest first)
