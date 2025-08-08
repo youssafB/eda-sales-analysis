@@ -1,12 +1,7 @@
 # eda-sales-analysis
 ## 1.  High-Level Metrics Overview
 
-Gain an initial understanding of overall business performance by calculating key high-level metrics for:
-
-- **Sales**
-- **Volume**
-- **Pricing**
-- **Customer Activity**
+Gain an initial understanding of overall business performance by calculating key high-level metrics for Sales, Volume, Pricing, and Customer Activity.
 
 ### 🧮 Summary Table
 
