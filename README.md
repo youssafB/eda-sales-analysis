@@ -39,7 +39,8 @@ Question: How do sales volume and profitability compare across categories?
 ### ✅ Actions:
 - Diversify revenue across categories  
 - Improve accessory margins or bundle strategically  
-- Reassess clothing strategy 
+- Reassess clothing strategy
+  
 
 ---
 
