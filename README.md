@@ -77,17 +77,4 @@ Management has raised concerns about:
 
 ---
 
-## 6. Technical & Analytical Skills Demonstrated
-- **Advanced SQL Concepts:**
-  - Window Functions (`NTILE()`, `ROW_NUMBER()`, `RANK()`)
-  - Common Table Expressions (CTEs)
-  - Complex Joins
-  - Conditional Logic with `CASE WHEN`
-  - Aggregations & Grouped Metrics
-  - Query optimization for large datasets
-- **Analytical Skills:**
-  - Business metric creation (Sales, Profitability, RFM scoring)
-  - Customer segmentation & retention strategy
-  - Data storytelling & visualization-ready output
 
----
