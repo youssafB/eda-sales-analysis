@@ -49,7 +49,7 @@ Management has raised concerns about:
 - **Accessories**: High volume, low profit — margin improvement needed.  
 - **Clothing**: Low contribution to both revenue and volume.
 
-📂 [View SQL Query](scripts/scripts/2_categories_performance)  
+📂 [View SQL Query](scripts/2_categories_performance)  
 **SQL Skills Used:** Grouped aggregations, category breakdown, calculated profit margin.
 
 ---
