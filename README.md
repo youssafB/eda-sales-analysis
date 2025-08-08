@@ -41,7 +41,7 @@ Question: How do sales volume and profitability compare across categories?
 - Improve accessory margins or bundle strategically  
 - Reassess clothing strategy
   
-
+For more details, see the [categories_performance](scripts/2_categories_performance).
 ---
 
 # 🛍️ Customer Segmentation with RFM Analysis
