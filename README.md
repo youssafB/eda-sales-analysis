@@ -18,7 +18,7 @@ Management has raised concerns about:
 ## 2. Executive Summary — Key Insights
 
 ### 💡 Key Takeaways
-- **96%+ of total revenue comes from Bikes**, driven by high prices — creating a heavy dependency on one category.  
+- **96%+ of total revenue comes from Bikes** — creating a heavy dependency on one category.  
 - **Accessories** represent **60% of units sold but contribute little to profit** — margins are weak.  
 - **33% of customers** are in **high-value segments** (Champions, Loyal, Big Spenders) — retention priority.  
 - **13% of customers** are **At Risk** and could churn without re-engagement campaigns.  
