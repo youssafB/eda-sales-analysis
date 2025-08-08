@@ -1,81 +1,93 @@
-# eda-sales-analysis
-## 1.  High-Level Metrics Overview
+# 📊 Sales Performance Analysis — SQL EDA Project
 
-Gain an initial understanding of overall business performance by calculating key high-level metrics for Sales, Volume, Pricing, and Customer Activity.
+## 1. Business Problem
+A retail company selling Bikes, Accessories, and Clothing wants to **understand its sales performance, product profitability, and customer value segmentation** to make better strategic decisions.
 
-### 🧮 Summary Table
+Management has raised concerns about:
+- Overreliance on a single product category.
+- Declining engagement from certain customer groups.
+- Low profitability from high-volume items.
 
-| **Total Sales** | **Total Quantity** | **Average Price** | **Total Nr. Orders** | **Total Nr. Products** | **Total Nr. Customers** |
-|-----------------|--------------------|--------------------|-----------------------|-------------------------|--------------------------|
-| 29,356,250      | 60,423             | 486                | 27,659                | 295                     | 18,484                   |
-
-> 📌 This overview is generated using a single SQL query that combines multiple aggregation functions with `UNION ALL`.  
-> You can view the full SQL query [here](scripts/1_Business_metrics).
-
----
-
-
-## 🔹Total sales by category
-Question: What is the total revenue generated  by each category ?
-
-### 🧠 Key Insights:
-- **Bikes = 96%+** of total revenue  
-- Driven by high unit price, not volume  
-> ⚠️ **Risk**: Heavy reliance on a single category increases business vulnerability.
-
-## 🔹Sales Volume & Profit by Category
-Question: How do sales volume and profitability compare across categories?
-
-### 🧠 Key Insights:
-- Accessories make up 60% of units sold but contribute very little to profit
-- Bikes account for only 25% of units sold yet generate over 96% of profit
-- Clothing has low volume and low profit contribution
-
-### ✅ Actions:
-- Diversify revenue across categories  
-- Improve accessory margins or bundle strategically  
-- Reassess clothing strategy
-> You can view the full SQL query [here.](scripts/2_categories_performance).
+**Goal of the analysis:**
+1. Identify revenue drivers and profitability risks.  
+2. Segment customers for targeted marketing campaigns.  
+3. Provide actionable recommendations backed by **data-driven insights**.
 
 ---
 
-# 🛍️ Customer Segmentation with RFM Analysis
+## 2. Executive Summary — Key Insights
 
-- This project applies **RFM analysis** (Recency, Frequency, Monetary) to segment customers based on their purchasing behavior. 
-- It's designed to help businesses understand **customer value** and **target segments more effectively**.
+### 💡 Key Takeaways
+- **96%+ of total revenue comes from Bikes**, driven by high prices — creating a heavy dependency on one category.  
+- **Accessories** represent **60% of units sold but contribute little to profit** — margins are weak.  
+- **33% of customers** are in **high-value segments** (Champions, Loyal, Big Spenders) — retention priority.  
+- **13% of customers** are **At Risk** and could churn without re-engagement campaigns.  
 
-
-### 🧠 Key Insights
-
-  - 33% of customers belong to high-value segments (Loyal Customers, Champions, Big Spenders) — ideal for loyalty, upselling, and personalized retention strategies.
-
-  - 13% are At Risk — showing declining engagement. Timely reactivation campaigns can recover this group before churn. 
-
-  - 11% are Lost Customers — historically engaged but now inactive. A smaller portion may respond to reactivation, but most indicate churned revenue.
-
-  - 7% are New or Potential Loyalists — early in their journey, strong candidates for lifecycle marketing to increase retention.
-
-### 🧠 Segmentation Logic
-
-- Customers are scored from 1 to 5 on Recency, Frequency, and Monetary metrics based on their relative rankings. 
-- Using these RFM scores, customers are grouped into 8 key segments :
-
-
-| Segment Name             | Rule Logic           | Description                                   |
-|--------------------------|----------------------|-----------------------------------------------|
-| 🏆 **Champions**          | R ≥ 4, F ≥ 4, M ≥ 4   | Best customers: buy often, spend a lot        |
-| ✨ **Loyal Customers**    | R ≥ 4, F ≥ 3          | Frequent buyers                               |
-| 🆕 **New Customers**      | R = 5, F = 1          | Just joined                                   |
-| 💰 **Big Spenders**       | R ≥ 3, M ≥ 4          | Spend a lot, may not buy frequently           |
-| ⏳ **At Risk**            | R ≤ 2, F ≥ 4          | Used to buy a lot, now quiet                  |
-| ❌ **Lost Customers**     | R ≤ 2, F ≤ 2, M ≤ 2   | Likely lost                                   |
-| 📈 **Potential Loyalists**| F ≥ 4, M ≤ 3          | Buy often, could spend more                   |
-| 🧊 **Others**             | -                    | Don’t fit into other segments                 |
- 
- - **Key SQL concepts used:** `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, and `GROUP BY`
- - For more details, see the [customers_segementation.](scripts/3_customers_segementation.sql).
-
+### 📌 Recommended Actions
+- Diversify revenue streams to reduce dependency on Bikes.  
+- Improve accessory margins via bundling, supplier renegotiation, or upselling.  
+- Launch loyalty and personalized retention campaigns for high-value customers.  
+- Implement churn prevention strategies for At Risk segments.
 
 ---
 
+## 3. High-Level Business Metrics
+| **Total Sales** | **Total Quantity** | **Avg. Price** | **# Orders** | **# Products** | **# Customers** |
+|-----------------|--------------------|----------------|--------------|----------------|-----------------|
+| 29,356,250      | 60,423             | 486            | 27,659       | 295            | 18,484          |
 
+📂 [View SQL Query](scripts/1_Business_metrics.sql)  
+**SQL Skills Used:** Aggregations, multiple `SUM()`, `COUNT(DISTINCT)`, `AVG()` combined via `UNION ALL`.
+
+---
+
+## 4. Sales Performance by Category
+**Question:** Which categories drive revenue and profit?
+
+### Insights
+- **Bikes**: 96%+ of revenue, high margin, low volume risk if supply is disrupted.  
+- **Accessories**: High volume, low profit — margin improvement needed.  
+- **Clothing**: Low contribution to both revenue and volume.
+
+📂 [View SQL Query](scripts/2_categories_performance.sql)  
+**SQL Skills Used:** Grouped aggregations, category breakdown, calculated profit margin.
+
+---
+
+## 5. Customer Segmentation — RFM Analysis
+**Objective:** Classify customers into behavioral segments to guide marketing.
+
+### Methodology
+- Scored each customer on **Recency, Frequency, and Monetary** metrics using `NTILE(5)`.
+- Assigned segments with `CASE WHEN` logic inside CTEs.
+- Created views for reusability.
+
+| Segment | Description | % of Customers |
+|---------|-------------|----------------|
+| 🏆 Champions | Buy often, spend a lot | 12% |
+| ✨ Loyal Customers | Frequent buyers | 10% |
+| 💰 Big Spenders | High spend, less frequent | 11% |
+| ⏳ At Risk | Previously active, now declining | 13% |
+| ❌ Lost | Likely churned | 11% |
+| 📈 Potential Loyalists | Frequent but low spend | 7% |
+| Others | Miscellaneous | 36% |
+
+📂 [View SQL Query](scripts/3_customers_segementation.sql)  
+**SQL Skills Used:** `CREATE VIEW`, `CTE`, `NTILE()`, `CASE`, `JOIN`, advanced filtering.
+
+---
+
+## 6. Technical & Analytical Skills Demonstrated
+- **Advanced SQL Concepts:**
+  - Window Functions (`NTILE()`, `ROW_NUMBER()`, `RANK()`)
+  - Common Table Expressions (CTEs)
+  - Complex Joins
+  - Conditional Logic with `CASE WHEN`
+  - Aggregations & Grouped Metrics
+  - Query optimization for large datasets
+- **Analytical Skills:**
+  - Business metric creation (Sales, Profitability, RFM scoring)
+  - Customer segmentation & retention strategy
+  - Data storytelling & visualization-ready output
+
+---
